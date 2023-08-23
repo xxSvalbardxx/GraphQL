@@ -1,0 +1,262 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background-image: url(../pictures/wp4676588-4k-pc-wallpapers.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/* ------------------------------- HEADER ----------------------------------- */
+
+header {
+    width: auto;
+    height: 10vh;
+    padding: 0 50px;
+    border-bottom: #5e7579 solid 2px;
+    backdrop-filter: blur(20px);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+h1 {
+    color: #fff;
+    font-size: 2vw;
+    text-shadow: 0 0 15px #fff;
+}
+
+.logout_button {
+    background: transparent;
+    border: none;
+    outline: none;
+}
+
+.logout_button,
+.logout_input,
+.logout_button button {
+    margin : 10px;
+    padding: 5px 10px;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 50px;
+    background: transparent;
+    border: #fff solid 1px;
+    outline: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.logout_button:hover {
+    text-shadow: 0 0 20px #fff;
+    box-shadow: 0 0 20px #fff;
+}
+
+/* --------------------------------- MAIN ------------------------------------- */
+
+main {
+    margin-top: 50px;
+}
+
+.card{
+    border-radius: 20px;
+    box-shadow:inset 0 0 20px #fff;
+    backdrop-filter: blur(20px);
+}
+
+.profile_and_ratio {
+    display: flex;
+    width: 60%;
+    height: 200px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+/* --------------------------------- PROFILE ------------------------------------- */
+
+.profile_container {
+    height: 100%;
+    width: 60%;
+    text-shadow: 0 0 10px #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    color: #fff;
+}
+
+.profile {
+    padding: 0 2%;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.profile_info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 100%;
+    padding-left: 2%;
+    text-overflow: ellipsis;
+}
+
+.profile img {
+    margin-right: 2%;
+    height: 120px;
+    border-radius: 50%;
+    box-shadow: 0 0 10px #fff;
+}
+
+/* --------------------------------- RATIO ------------------------------------- */
+
+.ratio_container {
+    
+    height: 100%;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    color: #fff;
+}
+
+#ratio_infos {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    
+}
+
+.ratio_title {
+    text-align: center;
+    font-size: 20px;
+    text-shadow: 0 0 10px #fff;
+}
+
+#svg-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: #fff solid 1px;
+}
+
+/* --------------------------- Graphs Container ------------------------------------- */
+
+.graphs{
+    display: flex;
+    justify-content: space-evenly;
+    margin : 50px 0;
+    align-items: center;
+    width: 100%;
+    
+}
+
+/* --------------------------------- XP ------------------------------------- */
+
+.xp {
+    height: 550px;
+    width: 820px;
+    color: #fff;
+}
+
+.xp_curve_container {
+    height: 100%;
+    width: 100%;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
+
+
+#svg_xp_curve {
+    height : 90%;
+    width: 90%;
+    border: rgba(255, 255, 255, 0.5) solid 1px;
+    border-radius: 20px;
+
+}
+
+
+#xp{
+    color: #fff;
+}
+
+/* --------------------------------- Skills --------------------------------------------- */
+
+.skill {
+    height: 550px;
+    width: 820px;
+    color: #fff;
+}
+
+.skill_container {
+    height: 100%;
+    width: 100%;
+    color: #fff;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#technical_skills,
+#technologies{
+    height : 90%;
+    width: 45%;
+    border: rgba(255, 255, 255, 0.5) solid 1px;
+    border-radius: 20px;
+
+}
+
+/*MEDIA QUERIES*/
+
+
+@media (max-width:576px){
+    header {
+        height: 50px;
+        padding: 0 50px;
+    }
+
+    h1 {
+        font-size: 4vw;
+    }
+
+    .profile_and_ratio {
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+        height: 40vh;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .profile_container {
+        height: 50%;
+        width: 100vw;
+    }
+
+    .profile_info{
+        font-size: 2vw;
+    }
+
+    .ratio_container {
+        height: 50%;
+        width: 100vw;
+    }
+
+    body{
+        display: flex;
+        flex-direction: column;
+    }
+
+}

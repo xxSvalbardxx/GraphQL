@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./static/css/login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+
+
+    <body>
+        <div class="login_form_container">
+            <h1>Login</h1>
+            <form method="post" class="login_form">
+                <div class="input_group">
+                    <label for="identifier"></label>
+                    <i class="fa fa-user"></i>
+
+                    <input type="text" name="identifier" id="identifier" class="input_text"
+                        placeholder="Username or E-mail" autocomplete="off" >
+                </div>
+
+                <div class="input_group">
+                    <label for="password"></label>
+                    <i class="fa fa-unlock-alt"></i>
+                    <input type="password" name="password" id="password" class="input_text" placeholder="Password"
+                        autocomplete="off" >
+                </div>
+                <div id="login_error" style="display: none;">Invalid Credentials</div>
+                <div class="login_button" >
+                    <input type="submit" value="Submit">
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+
+    </body>
+    <script src="login.js"></script>
+</html>
